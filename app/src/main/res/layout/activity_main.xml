@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mahesh.hp.mediaplayer.MainActivity">
+
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:text="Forward by 5 secs"
+        tools:ignore="HardcodedText" />
+
+    <ToggleButton
+        android:id="@+id/onOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/forward"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/forward"
+        android:text="ToggleButton"
+        tools:ignore="HardcodedText"
+        android:textOff="Play"
+        android:textOn="Pause"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/onOff"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/onOff"
+        android:text="Next"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/next"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/next"
+        android:text="Back by 5 secs"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Music Player"
+        android:textSize="30sp"
+        android:background="#ff0000"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/musicplayer"
+        tools:ignore="ContentDescription" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:layout_above="@+id/forward"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="TextView"
+        tools:ignore="HardcodedText"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:ignore="HardcodedText"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_toStartOf="@+id/backward"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
